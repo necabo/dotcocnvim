@@ -1,0 +1,8 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": ["rust"],
+
+    "rust.clippy_preference": "on",
+
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
+}
