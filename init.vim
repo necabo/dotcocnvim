@@ -8,6 +8,7 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}      " coc-json extension
     Plug 'neoclide/coc-rls', {'do': 'yarn install --frozen-lockfile'}       " coc-rls extension
     Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}    " coc-python extension
+    Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}       " coc-git extension
 
     Plug 'NLKNguyen/papercolor-theme'                                       " eye-friendly colorscheme
     Plug 'itchyny/lightline.vim'                                            " status bar
