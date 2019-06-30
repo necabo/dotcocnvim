@@ -12,6 +12,8 @@ Requirements:
 - yarn (see https://github.com/neoclide/coc.nvim)
 - rustup (see https://github.com/neoclide/coc-rls)
 - flake8 (Python PEP8 linter, configured in coc-settings.json)
+- ripgrep
+- ctags
 
 ```bash
 cd ~
