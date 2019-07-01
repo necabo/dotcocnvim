@@ -145,6 +145,14 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " --------------------------------------------------------------------------------
+" coc.nvim                                                                       |
+" --------------------------------------------------------------------------------
+augroup python_isort
+  autocmd!
+  autocmd FileType python autocmd BufWritePre <buffer> :CocCommand python.sortImports
+augroup end
+
+" --------------------------------------------------------------------------------
 " lightline.vim
 " --------------------------------------------------------------------------------
 " Don't show modes as lightline also does so
