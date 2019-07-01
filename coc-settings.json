@@ -7,5 +7,6 @@
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "/usr/bin/flake8",
-    "python.sortImports.path": "/usr/bin/isort"
+    "python.sortImports.path": "/usr/bin/isort",
+    "git.enableGutters": true
 }
