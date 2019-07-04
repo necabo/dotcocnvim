@@ -14,6 +14,7 @@ Requirements:
 - flake8 (Python PEP8 linter, configured in coc-settings.json)
 - ripgrep
 - ctags
+- a clipboard tool of your choice (`:h clipboard`)
 
 ```bash
 cd ~
