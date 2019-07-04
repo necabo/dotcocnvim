@@ -9,6 +9,7 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'neoclide/coc-rls', {'do': 'yarn install --frozen-lockfile'}       " coc-rls extension
     Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}    " coc-python extension
     Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}       " coc-git extension
+    Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}  " coc-snippets extension
 
     Plug 'NLKNguyen/papercolor-theme'                                       " eye-friendly colorscheme
     Plug 'itchyny/lightline.vim'                                            " status bar
@@ -17,6 +18,7 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'tpope/vim-commentary'                                             " commenting
     Plug 'ludovicchabant/vim-gutentags'                                     " tag file management
     Plug 'jiangmiao/auto-pairs'                                             " brackets auto-closing
+    Plug 'honza/vim-snippets'                                               " snippets for various languages
 call plug#end()
 
 let mapleader = "\<Space>"
@@ -151,6 +153,12 @@ augroup python_isort
   autocmd!
   autocmd FileType python autocmd BufWritePre <buffer> :CocCommand python.sortImports
 augroup end
+
+" --------------------------------------------------------------------------------
+" lightline.vim
+" --------------------------------------------------------------------------------
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " --------------------------------------------------------------------------------
 " lightline.vim
