@@ -151,7 +151,7 @@ nmap <leader>rn <Plug>(coc-rename)
 " --------------------------------------------------------------------------------
 augroup python_isort
   autocmd!
-  autocmd FileType python autocmd BufWritePre <buffer> :CocCommand python.sortImports
+  autocmd FileType python autocmd BufWritePre <buffer> call CocAction('runCommand', 'python.sortImports')
 augroup end
 
 " --------------------------------------------------------------------------------
