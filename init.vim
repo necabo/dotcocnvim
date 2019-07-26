@@ -1,5 +1,4 @@
 call plug#begin('~/.cocnvim/plugged')
-    Plug 'airblade/vim-rooter'                                              " change working directory to project root
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }       " fzf binary
     Plug 'junegunn/fzf.vim'                                                 " fzf vim utils
 
