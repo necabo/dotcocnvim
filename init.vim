@@ -18,6 +18,7 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'ludovicchabant/vim-gutentags'                                     " tag file management
     Plug 'jiangmiao/auto-pairs'                                             " brackets auto-closing
     Plug 'honza/vim-snippets'                                               " snippets for various languages
+    Plug 'tpope/vim-surround'                                               " change surroundings in place
 call plug#end()
 
 let mapleader = "\<Space>"
