@@ -1,6 +1,4 @@
 call plug#begin('~/.cocnvim/plugged')
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }       " fzf binary
-    Plug 'junegunn/fzf.vim'                                                 " fzf vim utils
 
     " coc and extension plugins
     Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}                " completions, LSP, etc.
@@ -10,15 +8,21 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}       " coc-git extension
     Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}  " coc-snippets extension
 
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }       " fzf binary
+    Plug 'junegunn/fzf.vim'                                                 " fzf vim utils
     Plug 'NLKNguyen/papercolor-theme'                                       " eye-friendly colorscheme
     Plug 'itchyny/lightline.vim'                                            " status bar
-    Plug 'tpope/vim-fugitive'                                               " git integration
     Plug 'scrooloose/nerdtree'                                              " file browsing
-    Plug 'tpope/vim-commentary'                                             " commenting
     Plug 'ludovicchabant/vim-gutentags'                                     " tag file management
     Plug 'jiangmiao/auto-pairs'                                             " brackets auto-closing
     Plug 'honza/vim-snippets'                                               " snippets for various languages
+
+    " tpope is awesome!
+    Plug 'tpope/vim-fugitive'                                               " git integration
+    Plug 'tpope/vim-commentary'                                             " commenting
     Plug 'tpope/vim-surround'                                               " change surroundings in place
+    Plug 'tpope/vim-repeat'                                                 " allow repeating plugin mappings
+    Plug 'tpope/vim-unimpaired'                                             " handy bracket mappings
 call plug#end()
 
 let mapleader = "\<Space>"
