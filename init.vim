@@ -82,8 +82,7 @@ set shortmess+=c
 " fzf                                                                            |
 " --------------------------------------------------------------------------------
 let $FZF_DEFAULT_COMMAND = "rg --files --no-ignore --hidden --follow --glob '!*/.git/*'"
-noremap <F4> :FZF<CR>
-inoremap <F4> <esc>:w<CR>:FZF<CR>
+noremap <C-p> :FZF<CR>
 
 " --column: Show column number
 " --line-number: Show line number

@@ -26,9 +26,9 @@ cd .cocnvim && ./install.sh
 
 ## Usage
 
-| Key           | Description                   |
-| ------------- | ----------------------------- |
-| <kbd>F1</kbd> | open :help                    |
-| <kbd>F2</kbd> | open file browser (nerd tree) |
-| <kbd>F3</kbd> | toggle paste mode             |
-| <kbd>F4</kbd> | open fuzzy find               |
+| Key                          | Description                   |
+| ---------------------------- | ----------------------------- |
+| <kbd>F1</kbd>                | open :help                    |
+| <kbd>F2</kbd>                | open file browser (nerd tree) |
+| <kbd>F3</kbd>                | toggle paste mode             |
+| <kbd>Ctrl</kbd>-<kbd>p</kbd> | open fuzzy find               |
