@@ -7,6 +7,7 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}    " coc-python extension
     Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}       " coc-git extension
     Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}  " coc-snippets extension
+    Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}  " coc-java extension
 
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }       " fzf binary
     Plug 'junegunn/fzf.vim'                                                 " fzf vim utils
