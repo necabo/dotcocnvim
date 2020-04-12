@@ -11,7 +11,7 @@ Requirements:
 - npm (npx is used during installation)
 - nodejs (see https://github.com/neoclide/coc.nvim)
 - yarn (see https://github.com/neoclide/coc.nvim)
-- rustup (see https://github.com/neoclide/coc-rls)
+- rust-analyzer
 - flake8 (Python PEP8 linter, configured in coc-settings.json)
 - ripgrep
 - ctags

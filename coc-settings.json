@@ -1,7 +1,8 @@
 {
     "coc.preferences.formatOnSaveFiletypes": ["rust"],
 
-    "rust.clippy_preference": "on",
+    "rust-analyzer.serverPath": "/usr/bin/rust-analyzer",
+    "rust-analyzer.checkOnSave.command": "clippy",
 
     "python.jediEnabled": false,
     "python.linting.pylintEnabled": false,
