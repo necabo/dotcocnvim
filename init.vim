@@ -111,6 +111,8 @@ set cmdheight=2
 set updatetime=300
 " always show signcolumns
 set signcolumn=yes
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
 " When the <Enter> key is pressed while the popup menu is visible, it only
 " hides the menu. Use this mapping to close the menu and also start a new
 " line.
