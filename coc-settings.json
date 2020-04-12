@@ -15,5 +15,18 @@
     "latex.build.onSave": false,
     "latex.build.args": ["-pdf", "-interaction=nonstopmode", "-synctex=1", "-pvc"],
     "latex.forwardSearch.executable": "zathura",
-    "latex.forwardSearch.args": ["--synctex-forward", "%l:1:%f", "%p"]
+    "latex.forwardSearch.args": ["--synctex-forward", "%l:1:%f", "%p"],
+
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cpp", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json", ".git/"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        }
+    }
 }
