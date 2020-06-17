@@ -1,7 +1,7 @@
 call plug#begin('~/.cocnvim/plugged')
 
     " coc and extension plugins
-    Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}                        " completions, LSP, etc.
+    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}              " completions, LSP, etc.
     Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}              " coc-json extension
 
     Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}  " coc-rust-analyzer extension
