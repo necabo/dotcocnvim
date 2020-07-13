@@ -10,6 +10,7 @@
     "python.linting.flake8Path": "/usr/bin/flake8",
     "python.linting.mypyEnabled": true,
     "python.sortImports.path": "/usr/bin/isort",
+    "python.autoComplete.addBrackets": true,
 
     "git.enableGutters": true,
 
