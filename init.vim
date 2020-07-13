@@ -16,7 +16,6 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'NLKNguyen/papercolor-theme'                                               " eye-friendly colorscheme
     Plug 'itchyny/lightline.vim'                                                    " status bar
     Plug 'scrooloose/nerdtree'                                                      " file browsing
-    Plug 'ludovicchabant/vim-gutentags'                                             " tag file management
     Plug 'jiangmiao/auto-pairs'                                                     " brackets auto-closing
     Plug 'honza/vim-snippets'                                                       " snippets for various languages
 
