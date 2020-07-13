@@ -158,6 +158,8 @@ augroup python_isort
   autocmd FileType python autocmd BufWritePost <buffer> call CocAction('runCommand', 'python.sortImports')
 augroup end
 
+let g:python3_host_prog='/usr/bin/python3'
+
 " --------------------------------------------------------------------------------
 " lightline.vim
 " --------------------------------------------------------------------------------
