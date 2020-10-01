@@ -11,6 +11,9 @@
     "python.linting.mypyEnabled": true,
     "python.sortImports.path": "/usr/bin/isort",
     "python.autoComplete.addBrackets": true,
+    "python.formatting.provider":"black",
+    "python.formatting.blackPath": "/usr/bin/black",
+    "python.formatting.blackArgs": ["--experimental-string-processing"],
 
     "git.enableGutters": true,
 
