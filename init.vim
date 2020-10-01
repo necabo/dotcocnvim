@@ -160,14 +160,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
-" --------------------------------------------------------------------------------
-" coc.nvim                                                                       |
-" --------------------------------------------------------------------------------
 let g:python3_host_prog='/usr/bin/python3'
 
-" --------------------------------------------------------------------------------
-" lightline.vim
-" --------------------------------------------------------------------------------
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
