@@ -18,6 +18,7 @@ call plug#begin('~/.cocnvim/plugged')
     Plug 'scrooloose/nerdtree'                                                      " file browsing
     Plug 'jiangmiao/auto-pairs'                                                     " brackets auto-closing
     Plug 'honza/vim-snippets'                                                       " snippets for various languages
+    Plug 'editorconfig/editorconfig-vim'                                            " https://editorconfig.org/
 
     " tpope is awesome!
     Plug 'tpope/vim-fugitive'                                                       " git integration
@@ -214,3 +215,8 @@ endfunction
 " nerdtree
 " --------------------------------------------------------------------------------
 noremap <F2> :NERDTreeToggle<CR>
+
+" --------------------------------------------------------------------------------
+" editorconfig-vim
+" --------------------------------------------------------------------------------
+let g:EditorConfig_max_line_indicator = "none"
