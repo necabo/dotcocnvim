@@ -70,9 +70,6 @@ nnoremap <silent> <leader>sv :source $MYVIMRC<CR>
 " remove highlighting of previous search results
 nnoremap <silent> <Leader>/ :nohlsearch<CR>
 
-set background=dark
-silent! colorscheme PaperColor
-
 set pastetoggle=<F3>
 set guicursor=
 
@@ -80,6 +77,9 @@ set guicursor=
 " found' messages
 set shortmess+=c
 
+" set colorscheme
+set background=dark
+silent! colorscheme PaperColor
 
 " --------------------------------------------------------------------------------
 " fzf                                                                            |
