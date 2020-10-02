@@ -84,17 +84,10 @@ silent! colorscheme PaperColor
 " --------------------------------------------------------------------------------
 " fzf                                                                            |
 " --------------------------------------------------------------------------------
-let $FZF_DEFAULT_COMMAND = "rg --files --no-ignore --hidden --follow --glob '!*/.git/*'"
-noremap <C-p> :FZF<CR>
+noremap <silent> <C-p> :GFiles<CR>
 
-
-function! s:p(bang, ...)
-  let preview_window = get(g:, 'fzf_preview_window', a:bang && &columns >= 80 || &columns >= 120 ? 'right': '')
-  if len(preview_window)
-    return call('fzf#vim#with_preview', add(copy(a:000), preview_window))
-  endif
-  return {}
-endfunction
+let g:fzf_layout = {'window': {'width': 0.90, 'height': 0.90}}
+let g:fzf_preview_window = 'right:70%'
 
 " --column: Show column number
 " --line-number: Show line number
@@ -106,7 +99,7 @@ endfunction
 " --follow: Follow symlinks
 " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 " --color: Search color options
-command! -bang -nargs=* RgAll call fzf#vim#grep('rg --column --line-number --no-heading --ignore-case --no-ignore --hidden --follow --glob "!*/.git/*" --color "always" '.shellescape(<q-args>), 1, s:p(<bang>0), <bang>0)
+command! -bang -nargs=* RgAll call fzf#vim#grep('rg --column --line-number --no-heading --ignore-case --no-ignore --hidden --follow --glob "!*/.git/*" --color "always" '.shellescape(<q-args>), 1, fzf#vim#with_preview(), <bang>0)
 
 " --------------------------------------------------------------------------------
 " coc.nvim                                                                       |
