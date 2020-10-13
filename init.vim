@@ -84,7 +84,7 @@ silent! colorscheme PaperColor
 " --------------------------------------------------------------------------------
 " fzf                                                                            |
 " --------------------------------------------------------------------------------
-noremap <silent> <C-p> :GFiles<CR>
+map <expr> <C-p> fugitive#head() != '' ? ':GFiles --others --exclude-standard<CR>' : ':Files<CR>'
 
 let g:fzf_layout = {'window': {'width': 0.90, 'height': 0.90}}
 let g:fzf_preview_window = 'right:70%'
