@@ -67,8 +67,6 @@ vnoremap <leader>P "+P
 :match ExtraWhitespace /\s\+$/
 
 nnoremap <silent> <leader>sv :source $MYVIMRC<CR>
-" remove highlighting of previous search results
-nnoremap <silent> <Leader>/ :nohlsearch<CR>
 
 set pastetoggle=<F3>
 set guicursor=
