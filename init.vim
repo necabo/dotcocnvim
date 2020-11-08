@@ -137,23 +137,10 @@ nmap <silent> ga <Plug>(coc-codeaction)
 " Use gh to show documentation in preview window
 nmap <silent> gh :call CocAction('doHover')<CR>
 
-" Use default vim scrolling in preview window
-nnoremap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "<C-f>"
-nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "<C-b>"
-nnoremap <expr><C-d> coc#util#has_float() ? <SID>float_scroll_half(1) : "<C-d>"
-nnoremap <expr><C-u> coc#util#has_float() ? <SID>float_scroll_half(0) : "<C-u>"
-nnoremap <expr><Esc> coc#util#has_float() ? ":call coc#util#float_hide()<CR>" : "<Esc>"
-
-function! s:float_scroll_half(forward)
-  let key = a:forward ? "\<C-d>" : "\<C-u>"
-  let winnr = winnr()
-  for i in range(1, winnr('$'))
-    if getwinvar(i, 'float')
-      return i."\<C-w>w".key."\<C-w>p"
-    endif
-  endfor
-  return ""
-endfunction
+" Allow scrolling in preview window
+nnoremap <expr><C-d> coc#float#has_float() ? coc#float#scroll(1) : "<C-d>"
+nnoremap <expr><C-u> coc#float#has_float() ? coc#float#scroll(0) : "<C-u>"
+nnoremap <expr><Esc> coc#float#has_float() ? ":call coc#float#close_all()<CR>" : "<Esc>"
 
 " Highlight symbol under cursor on CursorHold
 highlight CocHighlightText cterm=bold gui=bold
