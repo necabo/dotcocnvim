@@ -140,7 +140,7 @@ nmap <silent> gh :call CocAction('doHover')<CR>
 " Allow scrolling in preview window
 nnoremap <expr><C-d> coc#float#has_float() ? coc#float#scroll(1) : "<C-d>"
 nnoremap <expr><C-u> coc#float#has_float() ? coc#float#scroll(0) : "<C-u>"
-nnoremap <expr><Esc> coc#float#has_float() ? coc#float#close_all() : "<Esc>"
+nnoremap <expr><Esc> coc#float#has_float() ? ":call coc#float#close_all()<CR>" : "<Esc>"
 
 " Highlight symbol under cursor on CursorHold
 highlight CocHighlightText cterm=bold gui=bold
