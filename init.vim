@@ -51,6 +51,7 @@ set hlsearch
 " remove highlighting of previous search results
 nnoremap <silent> <Leader>/ :nohlsearch<CR>
 
+nnoremap Y y$
 " Copy to clipboard
 vnoremap  <leader>y  "+y
 nnoremap  <leader>Y  "+yg_
