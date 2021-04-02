@@ -137,7 +137,7 @@ nmap <silent> gr <Plug>(coc-references)
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
 xmap <silent><leader>a  <Plug>(coc-codeaction-selected)
-nmap <silent><leader>a  <Plug>(coc-codeaction-selected)
+nmap <silent><leader>a  <Plug>(coc-codeaction-selected)w
 
 " Remap keys for applying codeAction to the current buffer.
 nmap <silent><leader>ac  <Plug>(coc-codeaction)
