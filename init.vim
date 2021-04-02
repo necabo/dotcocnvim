@@ -6,7 +6,7 @@ call plug#begin('~/.cocnvim/plugged')
 
     Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}  " coc-rust-analyzer extension
 
-    Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}            " coc-python extension
+    Plug 'fannheyward/coc-pyright', {'do': 'yarn install --frozen-lockfile'}        " coc-pyright extension
     Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}               " coc-git extension
     Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}          " coc-snippets extension
     Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}              " coc-java extension

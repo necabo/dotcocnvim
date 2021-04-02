@@ -6,13 +6,8 @@
     "rust-analyzer.cargo.loadOutDirsFromCheck": true,
     "rust-analyzer.procMacro.enable": true,
 
-    "python.jediEnabled": false,
-    "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "/usr/bin/flake8",
-    "python.linting.mypyEnabled": true,
-    "python.sortImports.path": "/usr/bin/isort",
-    "python.autoComplete.addBrackets": true,
     "python.formatting.provider":"black",
     "python.formatting.blackPath": "/usr/bin/black",
     "python.formatting.blackArgs": ["--experimental-string-processing"],
